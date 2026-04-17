@@ -8,9 +8,27 @@ def datos():
     url = "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=10&tipoFiltro=eleccion"
     
     headers = {
-        "User-Agent": "Mozilla/5.0",
-        "Accept": "application/json, text/plain, */*",
-        "Referer": "https://resultadoelectoral.onpe.gob.pe/main/resumen"
+       'accept': '*/*',
+       'accept-language': 'es-ES,es;q=0.9,en;q=0.8,de;q=0.7,vi;q=0.6,pt-BR;q=0.5,pt;q=0.4,ja;q=0.3,ko;q=0.2,zh-CN;q=0.1,zh;q=0.1',
+       'content-type': 'application/json',
+       'priority': 'u=1, i',
+       'referer': 'https://resultadoelectoral.onpe.gob.pe/main/resumen',
+       'sec-ch-ua': '"Not:A-Brand";v="99", "Opera GX";v="129", "Chromium";v="145"',
+       'sec-ch-ua-mobile': '?1',
+       'sec-ch-ua-platform': '"Android"',
+       'sec-fetch-dest': 'empty',
+       'sec-fetch-mode': 'cors',
+       'sec-fetch-site': 'same-origin','accept': '*/*',
+       'accept-language': 'es-ES,es;q=0.9,en;q=0.8,de;q=0.7,vi;q=0.6,pt-BR;q=0.5,pt;q=0.4,ja;q=0.3,ko;q=0.2,zh-CN;q=0.1,zh;q=0.1',
+       'content-type': 'application/json',
+       'priority': 'u=1, i',
+       'referer': 'https://resultadoelectoral.onpe.gob.pe/main/resumen',
+       'sec-ch-ua': '"Not:A-Brand";v="99", "Opera GX";v="129", "Chromium";v="145"',
+       'sec-ch-ua-mobile': '?1',
+       'sec-ch-ua-platform': '"Android"',
+       'sec-fetch-dest': 'empty',
+       'sec-fetch-mode': 'cors',
+       'sec-fetch-site': 'same-origin',
     }
 
     response = requests.get(url, headers=headers)
